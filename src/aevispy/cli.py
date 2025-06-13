@@ -1,7 +1,7 @@
 import argparse
-from utilities import get_atoms
-from get_pythia_descs import get_pythia_descs
-from clustering import color_atoms
+from .utilities import get_atoms
+from .get_pythia_descs import get_pythia_descs
+from .clustering import color_atoms
 
 
 def main():
