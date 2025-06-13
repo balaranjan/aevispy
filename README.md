@@ -13,7 +13,7 @@ cd AEVisPy
 Create and activate a new conda environment:
 
 ```bash
-conda create -n aevispy_env python=<max_python_version>
+conda create -n aevispy_env python=3.8
 conda activate aevispy_env
 ```
 
