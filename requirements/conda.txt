@@ -1,2 +1,10 @@
 numpy
 matplotlib
+gsd==2.4.0
+freud-analysis=2.2
+pythia-learn
+fsph
+sympy
+ase
+scipy
+scikit-learn
