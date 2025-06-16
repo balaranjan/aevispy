@@ -70,6 +70,12 @@ def main():
 
     if args.frame:
         frame_to_read = int(args.frame)
+    else:
+        if args.input_filename.endswith(".cif"):
+            print(
+                "For .gsd files, the first frame will be read by default.  \
+                  \nPlease specify the frame number using -f flag, if needed."
+            )
 
     if args.desc:
         desc = [int(v) for v in args.desc]
