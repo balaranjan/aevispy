@@ -1,8 +1,10 @@
-# AEVisPy
+# Atomic Environment Visualization using Pythia (aevsipy)
+
+This package finds and colors different coordination environments in a given structure. The common use case is the outputs from MD simulations, where there are different coordination environments present in the output. This uses descriptors from the Pythia package (https://github.com/glotzerlab/pythia/tree/master) and uses Gaussian Mixture Model for unsupervised classification of the environments. The input file number of expected environments (used to specify clusters) are required arguments.
 
 Here is a quick tutorial on how to locally install the package.
 
-## How to install `AEVisPy` locally
+## How to install `aevispy` locally
 
 `cd` into the project directory:
 
@@ -29,26 +31,6 @@ pip install -e .
 
 ### Method 2: Install your package with dependencies sourced from conda
 
-If you haven't already, ensure you have the conda-forge channel added as the highest priority channel.
-
-```bash
-conda config --add channels conda-forge
-```
-
-Install the dependencies listed under `conda.txt`:
-
-```bash
-conda install --file requirements/conda.txt
-```
-
-Then install your Python package locally:
-
-```bash
-pip install -e . --no-deps
-```
-
-> `--no-deps` is used to avoid installing the dependencies in `requirements/pip.txt` since they are already installed in the previous step.
-
 ## Verify your package has been installed
 
 Verify the installation:
@@ -62,7 +44,7 @@ pip list
 To get started, type
 
 ```
-python -m aevispy -h
+aevispy -h
 
 usage: __main__.py [-h] [-d DESC [DESC ...]] [-s SUPERCELL [SUPERCELL ...]] [-f FRAME] input_file envs [envs ...]
 
@@ -101,13 +83,13 @@ optional arguments:
 To color your own files, run
 
 ```
-python -m aevispy my_structure.cif number_of_envs_expected ...optional options
+aevispy my_structure.cif number_of_envs_expected ...optional options
 ```
 
 e.g.
 
 ```
-python -m aevispy CrFe.cif 4 -s 3 -d 8 9
+aevispy CrFe.cif 4 -s 3 -d 8 9
 ```
 
 Great! The package is now importable in any Python scripts located on your local machine. For more information, please refer to the Level 4 documentation at [https://billingegroup.github.io/scikit-package/](https://billingegroup.github.io/scikit-package/).

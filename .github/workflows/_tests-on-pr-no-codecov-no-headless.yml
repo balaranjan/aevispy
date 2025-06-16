@@ -6,7 +6,7 @@ on:
       python_version:
         description: "Python version for Conda environment"
         default: 3.8
-        required: false
+        required: true
         type: number
 
 jobs:
