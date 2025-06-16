@@ -9,7 +9,7 @@ Here is a quick tutorial on how to locally install the package.
 `cd` into the project directory:
 
 ```bash
-cd AEVisPy
+cd aevispy
 ```
 
 Create and activate a new conda environment:
