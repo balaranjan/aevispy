@@ -28,7 +28,7 @@ def main():
     parser = argparse.ArgumentParser(
         description=description, formatter_class=argparse.RawTextHelpFormatter
     )
-    parser.add_argument("input_file", help="Path to the input file")
+    parser.add_argument("input_filename", help="Path to the input file")
     parser.add_argument(
         "envs", nargs="+", help="Number of environments. e.g. 4 or 4 6"
     )
@@ -64,7 +64,7 @@ def main():
     desc = list(range(1, 11))
 
     args = parser.parse_args()
-    input_filename = args.input_file
+    input_filename = args.input_filename
 
     envs = [int(i) for i in args.envs]
 
