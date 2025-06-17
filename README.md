@@ -29,8 +29,6 @@ pip install -e .
 
 > The above command will automatically install the dependencies listed in `requirements/pip.txt`.
 
-### Method 2: Install your package with dependencies sourced from conda
-
 ## Verify your package has been installed
 
 Verify the installation:
@@ -91,5 +89,3 @@ e.g.
 ```
 aevispy CrFe.cif 4 -s 3 -d 8 9
 ```
-
-Great! The package is now importable in any Python scripts located on your local machine. For more information, please refer to the Level 4 documentation at [https://billingegroup.github.io/scikit-package/](https://billingegroup.github.io/scikit-package/).
