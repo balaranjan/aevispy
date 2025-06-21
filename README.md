@@ -24,7 +24,7 @@ conda activate aevispy_env
 It's simple. The only command required is the following:
 
 ```bash
-pip install -e .
+pip install .
 ```
 
 > The above command will automatically install the dependencies listed in `requirements/pip.txt`.
@@ -46,7 +46,7 @@ To get started, type
 ```
 aevispy -h
 
-usage: __main__.py [-h] [-d DESC [DESC ...]] [-s SUPERCELL [SUPERCELL ...]] [-f FRAME] input_file envs [envs ...]
+usage: aevispy [-h] [-d  [...]] [-s  [...]] [-f] input_filename envs [envs ...]
 
     Command line tool for AEVisPy
 
@@ -67,17 +67,16 @@ usage: __main__.py [-h] [-d DESC [DESC ...]] [-s SUPERCELL [SUPERCELL ...]] [-f 
 
 
 positional arguments:
-  input_file            Path to the input file
+  input_filename        Path to the input file
   envs                  Number of environments. e.g. 4 or 4 6
 
 optional arguments:
   -h, --help            show this help message and exit
-  -d DESC [DESC ...], --desc DESC [DESC ...]
+  -d  [ ...], --desc  [ ...]
                         Descriptors. e.g. 4 or 4 6
-  -s SUPERCELL [SUPERCELL ...], --supercell SUPERCELL [SUPERCELL ...]
+  -s  [ ...], --supercell  [ ...]
                         Multipliers for making super cell. e.g. 2 2 2 or 2
-  -f FRAME, --frame FRAME
-                        Frame number to get from gsd file.
+  -f , --frame          Frame number to get from gsd file.
 ```
 
 To color your own files, run

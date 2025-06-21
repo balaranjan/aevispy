@@ -33,16 +33,25 @@ def main():
         "envs", nargs="+", help="Number of environments. e.g. 4 or 4 6"
     )
     parser.add_argument(
-        "-d", "--desc", nargs="+", help="Descriptors. e.g. 4 or 4 6"
+        "-d",
+        "--desc",
+        nargs="+",
+        metavar="",
+        help="Descriptors. e.g. 4 or 4 6",
     )
     parser.add_argument(
         "-s",
         "--supercell",
+        metavar="",
         nargs="+",
         help="Multipliers for making super cell. e.g. 2 2 2 or 2",
     )
     parser.add_argument(
-        "-f", "--frame", help="Frame number to get from gsd file.", type=int
+        "-f",
+        "--frame",
+        metavar="",
+        help="Frame number to get from gsd file.",
+        type=int,
     )
 
     descriptors = [
