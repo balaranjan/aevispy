@@ -1,8 +1,15 @@
-# Atomic Environment Visualization using Pythia (aevsipy)
+# Atomic Environment Visualization using Pythia (aevispy)
+
+[![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)
 
 This package finds and colors different coordination environments in a given structure. The common use case is the outputs from MD simulations, where there are different coordination environments present in the output. This uses descriptors from the Pythia package (https://github.com/glotzerlab/pythia/tree/master) and uses Gaussian Mixture Model for unsupervised classification of the environments. The input file number of expected environments (used to specify clusters) are required arguments.
 
-Here is a quick tutorial on how to locally install the package.
+## Demo
+
+![aevispy-demo-gif](assets/aevispy.gif)
+
+## ![Youtube Tutorial](https://youtu.be/VaPWo6KVTyQ)
 
 ## How to install `aevispy` locally
 
@@ -88,3 +95,9 @@ e.g.
 ```
 aevispy CrFe.cif 4 -s 3 -d 8 9
 ```
+
+## Example Output
+
+After running the command, you will get an output similar to the following:
+
+![Example output](https://github.com/balaranjan/aevispy/blob/main/examples/test_n_4.png)
