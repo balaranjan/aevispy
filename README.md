@@ -3,7 +3,8 @@
 This package finds and colors different coordination environments in a given structure. The common use case is the outputs from MD simulations, where there are different coordination environments present in the output. This uses descriptors from the Pythia package (https://github.com/glotzerlab/pythia/tree/master) and uses Gaussian Mixture Model for unsupervised classification of the environments. The input file number of expected environments (used to specify clusters) are required arguments.
 
 Here is a quick tutorial.
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/VaPWo6KVTyQ&t=252s/0.jpg)](https://www.youtube.com/watch?v=VaPWo6KVTyQ&t=252s)
+</br>
+[![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/VaPWo6KVTyQ/hqdefault.jpg)](https://www.youtube.com/watch?v=VaPWo6KVTyQ&t=0s)
 
 ## How to install `aevispy` locally
 
