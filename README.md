@@ -10,6 +10,7 @@ This package finds and colors different coordination environments in a given str
 ![aevispy-demo-gif](assets/aevispy.gif)
 
 ## ![Youtube Tutorial](https://youtu.be/VaPWo6KVTyQ)
+
 </br>
 [![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/VaPWo6KVTyQ/hqdefault.jpg)](https://www.youtube.com/watch?v=VaPWo6KVTyQ&t=0s)
 
